@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZipX Tracking</title>
+<link>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/cupertino/jquery-ui.css">
+<link rel="stylesheet" href="assets/zipx-track.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="assets/zipx-track.js"></script>
+
+</head>
+<body>
+
+<div class="centered" style="height: 100px;">
+     <div id="tk1-label" style="float:left;">
+     <h1>Track</h1>
+     </div>
+     <div id="tk2-label" style="float:right;">
+     <h1>History</h1>
+     </div>
+</div>
+<div id="content" class="centered ui-widget-content ui-corner-all" style="margin-bottom: 15px;">
+<div id="tk1">
+<div class="inner">
+  <form id="trakform">
+  <label for="zipx_box">ZipX Box:</label><input type="text" name="zipx_box" id="zipx_box" />
+  <label for="airbill1">ZipX Airbill:</label><input type="text" name="airbill1" id="airbill1" />
+  <label for="zipx_carrier_bill">Zipx Carrier Bill:</label><input type="text" name="zipx_carrier_bill" id="zipx_carrier_bill" />
+  <select name="zipx_carrier" id="zipx_carrier">
+        <option value="USP">US Postal Service</option>
+        <option value="IBC">IBC</option>
+        <option value="FDX">FedEx</option>
+  			<option value="UPS">UPS</option>
+  			<option value="AMZ">Amazon</option>
+        <option value="WIN">Walk-in</option>
+        <option value="OTH">Other</option>
+  </select>
+</form>
+  <button class="track" for="trakform">Track</button> | <button class="reset" for="trakform">Reset</button>
+</div>
+</div>
+
+
+
+<div id="tk2" style="display:none;">
+<div class="inner">
+  <form id="trakform2">
+  <label for="zipx_box">ZipX Box:</label><input type="text" name="zipx_box" id="zipx_box_f2" />
+  <label for="zipx_start">Start Date:</label><input type="text" name="zipx_start" id="zipx_start" class="datepicker" />
+  <label for="zipx_end">End Date:</label><input type="text" name="zipx_end" id="zipx_end" class="datepicker" />
+</form>
+  <button class="track" for="trakform2">Track</button> | <button class="reset" for="trakform2">Reset</button>
+</div>
+</div>
+
+</div>
+
+<div id="liveTrack" style="width: 700px;" class="centered"></div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+html { font: normal 300 16px/25px Arial, sans-serif; color: #000000; }
+body { background: white; font-size: 1.2em; }
+h1 { text-align: center;}
+input[type="text"]{width: 395px; height: 30px; font-size: 1.4em; margin-bottom: 15px; margin-left: 5px;}
+.inner { width: 70%; margin: 0 auto; padding: 15px;}
+.box { background-color: #F1F1F1; border: 1px solid #D4D4D4; margin: 15px; }
+.centered { margin: auto; width: 550px; padding: 10px;}
+.bordered{ border:3px solid #0073EA; }
