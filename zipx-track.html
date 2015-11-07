@@ -25,7 +25,6 @@
 <div class="inner">
   <form id="trakform">
   <label for="zipx_box">ZipX Box:</label><input type="text" name="zipx_box" id="zipx_box" />
-  <label for="airbill1">ZipX Airbill:</label><input type="text" name="airbill1" id="airbill1" />
   <label for="zipx_carrier_bill">Zipx Carrier Bill:</label><input type="text" name="zipx_carrier_bill" id="zipx_carrier_bill" />
   <select name="zipx_carrier" id="zipx_carrier">
         <option value="USP">US Postal Service</option>
@@ -37,7 +36,14 @@
         <option value="OTH">Other</option>
   </select>
 </form>
-  <button class="track" for="trakform">Track</button> | <button class="reset" for="trakform">Reset</button>
+  <button class="track" for="trakform">Track By Carrier</button> | <button class="reset" for="trakform">Reset</button>
+</div>
+<hr />
+<div class="inner">
+     <form id="billform">
+          <label for="bill">ZipX Bill:</label><input type="text" name="bill" id="bill" />
+     </form>
+     <button class="track" for="billform">Track by Bill</button> | <button class="reset" for="billform">Reset</button>
 </div>
 </div>
 
@@ -50,7 +56,7 @@
   <label for="zipx_start">Start Date:</label><input type="text" name="zipx_start" id="zipx_start" class="datepicker" />
   <label for="zipx_end">End Date:</label><input type="text" name="zipx_end" id="zipx_end" class="datepicker" />
 </form>
-  <button class="track" for="trakform2">Track</button> | <button class="reset" for="trakform2">Reset</button>
+  <button class="track" for="trakform2">Search</button> | <button class="reset" for="trakform2">Reset</button>
 </div>
 </div>
 
