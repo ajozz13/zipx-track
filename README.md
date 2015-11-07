@@ -4,6 +4,11 @@ present a simple interface for our company's tracking page.
 
 Please visit http://www.ibcinc.com or http://www.zipx.com
 
-Regards
-Alberto Ochoa
+Application dependencies
 
+  - JQuery
+  - JQuery UI - tested with Cupertino theme
+
+Regards
+
+Alberto Ochoa
